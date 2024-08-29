@@ -42,6 +42,13 @@ const Image3 = styled.img`
     
 `;
 
+const Bunny = styled.img`
+    display: flex;
+    width: 20%;
+    height: auto;
+    z-index: 0;
+`;
+
 const Container = styled.div`
     dislay: flex;
     flex-direction: column;
