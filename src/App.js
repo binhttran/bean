@@ -15,6 +15,7 @@ const Heading = style.div`
     margin-right: 10px;
     padding: 8px 16px;
 
+
     &:hover {
       height: 30%;
       border-radius: 25px;
@@ -28,13 +29,16 @@ const Body = style.div`
     height: 100vh;
     background: white;
     flex-direction: column;
-`;
+    margin: 0;
+    height: 100vh;
+   `;
 
 
 const Container = style.div`
     display: flex;
     flex-direction: column;
-`
+
+`;
 function App() {
   return (
     <Container>
