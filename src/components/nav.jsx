@@ -90,7 +90,7 @@ const Nav = () => {
                 </StyledList>
                 <StyledList>
                     <Button>
-                        <StyledLink href="skills">Skills</StyledLink>
+                        <StyledLink href="#skills">Skills</StyledLink>
                     </Button>
                 </StyledList>
                 <StyledList>

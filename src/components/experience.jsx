@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 
 const Title = styled.h2`
-    text-align: center;
-    color: lightblue; 
+    color: white;
+    font-weight: bold;
+    font-size: 80px;
+    margin-top: -35%;
 `;
 
 const Line = styled.hr`
@@ -19,12 +21,21 @@ const Dates = styled.p`
 
 `;
 const Wrapper = styled.div`
+    width: 100vw;
+    height: 100%;
+    min-height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
     flex-direction: column;
-    @media (max-width: 1000px) {
-        flex-direction: column;
-        margin-left: 50px;
-    }
+    background-color: #325266;
+    position: relative;
+
+
 `; 
 
 const SubTitle = styled.h3`
@@ -100,22 +111,14 @@ const Wrapper4 = styled.div`
     flex-direction: column;
     padding: 20px; 
     margin-top: 10px;
-
-    
-
-
-
-
-   
 `;
-function Main() {
+function Experience() {
   return (
-    <Wrapper>
-        <Title id='experience'>Experience</Title>
-            <Line/>
-                <Wrapper2>
+    <Wrapper id='experience'>
+        <Title >EXPERIENCE</Title>
+                {/* <Wrapper2>
                     <Wrapper3>
-                        <SubTitle>Intern @ Ernest & Young</SubTitle>  
+                        <SubTitle>Intern @ Ernst & Young</SubTitle>  
                         <Dates>May 2023 - July 2023</Dates>
                         <Position>Researched ESG reports</Position>
                     </Wrapper3>
@@ -137,7 +140,7 @@ function Main() {
                 </Wrapper2>
                 <Wrapper2>
                     <Wrapper3>
-                        <SubTitle>Intern @ Ernest & Young</SubTitle>   
+                        <SubTitle>Intern @ Ernst & Young</SubTitle>   
                         <Dates>June 2020 - August 2020</Dates>
                         <Position>Researched the Digital Divide</Position>
                     </Wrapper3>
@@ -146,11 +149,11 @@ function Main() {
                         <Description>Conducted more than 10 interviews with school superintendents inquiring about improvements to virtual learning during the COVID-19 pandemic.</Description>
                     </Wrapper4>
                 </Wrapper2>
-                 
+                  */}
     </Wrapper>
 
    
   );
 }
 
-export default Main;
+export default Experience;

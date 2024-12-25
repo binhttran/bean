@@ -1,9 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 import Nav from './components/nav.jsx';
+import Name from './components/name.jsx';
 import style from 'styled-components';
-import Main from './components/main.jsx';
+import Experience from './components/experience.jsx';
 import Intro from "./components/intro"
+import Skills from "./components/skills"
 
 const Heading = style.div`
     display: flex;
@@ -42,12 +44,14 @@ const Container = style.div`
 function App() {
   return (
     <Container>
-        <Heading>
+        {/* <Heading>
           <Nav />
-        </Heading>
+        </Heading> */}
         <Body>
+              <Name/>
               <Intro/>
-              <Main/>
+              <Experience/>
+              <Skills/>
         </Body>
     </Container>
   
