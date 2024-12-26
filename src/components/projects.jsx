@@ -5,21 +5,9 @@ const Title = styled.h2`
     font-weight: bold;
     font-size: 80px;
     margin-top: -35%;
+    position: absolute;
 `;
 
-const Line = styled.hr`
-    border: 1px solid lightblue;
-    margin-left: 20px; 
-    margin-top: 5px; 
-    margin-right: 20px;
-`;
-
-const Dates = styled.p`
-    color: white;
-    text-align: left;
-    margin-top: -5px;
-
-`;
 const Wrapper = styled.div`
     width: 100vw;
     height: 100%;
@@ -32,90 +20,96 @@ const Wrapper = styled.div`
     text-align: center;
     padding: 2rem;
     flex-direction: column;
-    background-color: #325266;
+    background-color: #101827;
     position: relative;
-
-
 `; 
+
+const Box1 = styled.div`
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+`;
+
+const MiniBox = styled.div`
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #09090b;
+    border-radius: 25px;
+    width: 30%;
+    height: auto;
+    overflow: hidden;
+  
+   
+
+`;
 
 const SubTitle = styled.h3`
     color: white;
     text-align: left; 
-
-    &:hover {
-        color: #61ACC4;
-    }
-    @media (max-width: 1000px) {
-        margin-left: 50px; 
-    }
-`;
-const Description = styled.li`
-    color: white;
-    line-height: 1.5;
-    max-width: 600px; 
-    margin-left: auto; 
-    margin-right: auto; 
-    line-height: 2;
-    list-style-position: outside; 
-    padding-left: 1.5em; 
-    text-indent: -1.5em;
-
-    
-    @media (max-width: 1000px) {
-        margin-left: 50px; 
-    }
-
+    margin-left: 20px;
 `;
 
-const Wrapper2 = styled.div`
-    display: flex;
-    transition: background-color 0.3s;
-    border-radius: 25px;
-    margin-top: 10px; 
-    margin-left: 10px; 
-    margin-right: 10px;
-    padding: 8px 16px;
-    flex-direction: row;
-    background-color: #B8D2E3; 
 
-    &:hover {
-        border: 7px solid;
-        border-color: lightblue;
-
-    }
-`;
-
-const Position = styled.p`
+const Description = styled.p`
     color: white;
     text-align: left;
-    font-style: italic; 
-    margin-top: -5px;
+    margin-left: 20px;
+`;
+const Img = styled.img`
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    object-fit: cover;
+    backgroud-position: center;
+    transition: 1s; 
 
 
-    @media (max-width: 1000px) {
-        margin-left: 50px; 
+    //slowly zoom in so it will be cropped when hover
+    &:hover{
+        transform: scale(1.05);
+
+        
+        
     }
 `;
 
-const Wrapper3 = styled.div`
-    display: flex;
-    width: 50%;
-    margin-left: 50px;
-    flex-direction: column
+const Button = styled.button`
+    background-color: black;
+    border-radius: 4px;
+    border-color: white;
+    text-color: white;
+    width: 20%;
+    height: 100%;
+    color: white;
+    font-size: 10px;
+    margin-left: 20px;
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: -10px;
 
+    &:hover {
+        background-color: #27272A;
+        border-color: #27272A;
 `;
-
-const Wrapper4 = styled.div`
-    display: flex;
-    width: 50%;
-    flex-direction: column;
-    padding: 20px; 
-    margin-top: 10px;
-`;
-function Experience() {
+function Projects() {
   return (
     <Wrapper id='projects'>
         <Title >PROJECTS</Title>
+        <Box1>
+            <MiniBox>
+                <Img src="pics/project1.png"/>
+                <SubTitle>Sign Language Lexicon</SubTitle>
+                //link in the button
+                <Button>git repo</Button>
+                <Description>Sign Language Lexicon offers a platform for admins 
+                to perform CRUD operations on lexicons, which are short snippets of signing specific words. This provides digital representation of 
+                American Sign Language</Description>
+            </MiniBox>
+
+        </Box1>
                
     </Wrapper>
 
@@ -123,4 +117,4 @@ function Experience() {
   );
 }
 
-export default Experience;
+export default Projects;
