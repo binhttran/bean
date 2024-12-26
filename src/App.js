@@ -3,7 +3,7 @@ import './App.css';
 import Nav from './components/nav.jsx';
 import Name from './components/name.jsx';
 import style from 'styled-components';
-import Experience from './components/experience.jsx';
+import Projects from './components/projects.jsx';
 import Intro from "./components/intro"
 import Skills from "./components/skills"
 
@@ -50,7 +50,7 @@ function App() {
         <Body>
               <Name/>
               <Intro/>
-              <Experience/>
+              <Projects/>
               <Skills/>
         </Body>
     </Container>

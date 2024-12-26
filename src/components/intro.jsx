@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+
 const Image = styled.img`
     display: flex;
     width: 50%;
@@ -44,8 +45,7 @@ const Container = styled.div`
     padding: 2rem;
     flex-direction: column;
     background-color: #b8d2e3;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    border-radius: 25px;
     position: relative;
 `;
 
