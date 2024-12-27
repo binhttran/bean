@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-
+import React, {useState, useEffect} from 'react';
+import CustomCursor from './cursor';
 
 const Image = styled.img`
     display: flex;
@@ -50,7 +51,7 @@ const Container = styled.div`
 `;
 
 const Title = styled.h1`
-    color: white;
+    color: #ebebe8;
     font-weight: bold;
     font-size: 80px;
 `;
@@ -102,9 +103,11 @@ const Heading = styled.div`
     display: flex;
     height: 30%;
 `;
+
 function Intro() {
     return (
         <Container id = 'about'>
+            <CustomCursor />
             <Heading>
                 <Title>ABOUT ME</Title>
             </Heading>
@@ -128,7 +131,7 @@ function Intro() {
                 with the development of medical devices and solving problems in healthcare with data analysis. 
                 I will be taking a class on biomedical technology, which I am super excited about :)
             </h5>
-            <h5>When I have free time and it's a nice day, I enjoy activities like tennis, pickleball, kayaking, or hiking!
+            <h5>When I have free time, on a nice day, I enjoy activities like tennis, pickleball, kayaking, or hiking!
                  Otherwise, I take pride in painting,
                 baking, and exploring new music. Feel free to talk to me about any of these!</h5>
             </Introduction>

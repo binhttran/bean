@@ -114,7 +114,7 @@ const Position = styled.h2`
     opacity: 0.6;
     margin-top: 0px; 
 `;
-const Cursor = styled.span`
+const Cursor2 = styled.span`
     border-right: 2px solid grey;
     animation: blink 0.80s steps(1) infinite;
 
@@ -130,6 +130,7 @@ const Cursor = styled.span`
         }
     }
 `; 
+
 
 const TypingContainer = ({text}) => {
     const[typedText, setTypedText] = useState('');
@@ -173,12 +174,14 @@ const TypingContainer = ({text}) => {
 
      return(
         <TypedDiv textLength={text.length}>
-            <Position>{typedText}<Cursor/></Position>
+            <Position>{typedText}<Cursor2/></Position>
             
         </TypedDiv>
      );
 
 };
+
+
 
 
 function Name(){
@@ -193,7 +196,7 @@ function Name(){
                         <StyledLink href="#about">ABOUT</StyledLink>
                     </Nav>
                     <Nav>
-                        <StyledLink href="#projects">PROJECTS</StyledLink>
+                        <StyledLink href="#projects" >PROJECTS</StyledLink>
                     </Nav>
                     <Nav>
                         <StyledLink href="#skills">SKILLS</StyledLink>

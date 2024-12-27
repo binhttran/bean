@@ -1,11 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
-import Nav from './components/nav.jsx';
+import { useEffect } from 'react';
 import Name from './components/name.jsx';
 import style from 'styled-components';
-import Projects from './components/projects.jsx';
+import Projects from './components/projects';
 import Intro from "./components/intro"
 import Skills from "./components/skills"
+import CustomCursor from './components/cursor';
+import Contacts from './components/contacts';
+
 
 const Heading = style.div`
     display: flex;
@@ -41,17 +44,18 @@ const Container = style.div`
     flex-direction: column;
 
 `;
+
+
+
 function App() {
   return (
     <Container>
-        {/* <Heading>
-          <Nav />
-        </Heading> */}
         <Body>
               <Name/>
               <Intro/>
               <Projects/>
               <Skills/>
+              <Contacts/>
         </Body>
     </Container>
   

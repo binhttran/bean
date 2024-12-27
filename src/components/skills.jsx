@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import CustomCursor from "./cursor";
 
 const Container = styled.div`
     flex-direction: column;
@@ -18,47 +19,79 @@ const Container = styled.div`
     position: relative;
 `;
 const Title = styled.h2`
-    color: black;
+    color: #101827;
     font-weight: bold;
     font-size: 80px;
 
 `;
 
-const Button = styled.button`
+const Button = styled.div`
+    display: flex;
+    flex-direction: row;
     background-color: white;
     border-radius: 10px;
     margin-right: 10px;
-    padding: 10px;
+    border: none;
+    margin-top: 10px;   
+    max-width: 150px;
+    justify-content: flex-start;
+    padding: 10px 30px;
+    height: fit-content;
+    width: fit-content;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ 
 
+`;
+
+const Font = styled.h3`
+    font-size: 20px;
+    font-weight: bold;
+    color: #101827;
 `;
 const Buttons = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    margin: 30px;
+    margin-bottom: 90%;
+    flex-wrap: wrap;
+    margin-left: 10%;
 `;
+
+const Container1 = styled.div`
+    flex-direction: column;
+    display: flex;
+    height: 30%;
+`;
+
+const Img = styled.img`
+    width: 30%;
+    height: auto;
+    margin: auto;
+    padding: 0 10px 0 0; 
+`; 
+
+
 function Skills(){
     return (
         <Container id = 'skills'>
-            <div>
+            <CustomCursor />
+            <Container1>
                 <Title>SKILLS</Title>
-            </div>
+            </Container1>
             <Buttons>
-                <Button>Python</Button>
-                <Button>Java</Button>
-                <Button>JavaScript</Button> 
-                <Button>ReactJS</Button>  
-                <Button>HTML/CSS</Button>
-                <Button>SQL</Button>
-                <Button>Git</Button>
-                <Button>C</Button>
-                <Button>MongoDB</Button>
-                <Button>Typescript</Button>
-                <Button>Figma</Button>
-                <Button>Azure</Button>
-                <Button>Git</Button>
-                <Button>BaseX</Button>
-                <Button>Bash</Button>
+                <Button><Img src = "./pics/python.png"/><Font>Python</Font></Button>
+                <Button><Img src="./pics/java.png"/><Font>Java</Font></Button>
+                <Button><Img src="./pics/js.png"/><Font>JavaScript</Font></Button> 
+                <Button><Img src="./pics/react.png"/><Font>ReactJS</Font></Button>  
+                <Button><Img src="./pics/html:css.png"/><Font>HTML/CSS</Font></Button>
+                <Button><Img src="./pics/sql.png"/><Font>SQL</Font></Button>
+                <Button><Img src="./pics/git.png"/><Font>Git</Font></Button>
+                <Button><Img src="./pics/c.png"/><Font>C</Font></Button>
+                <Button><Img src="./pics/mongo.png"/><Font>MongoDB</Font></Button>
+                <Button><Img src="./pics/ts.png"/><Font>Typescript</Font></Button>
+                <Button><Img src="./pics/figma.png"/><Font>Figma</Font></Button>
+                <Button><Img src="./pics/azure.png"/><Font>Azure</Font></Button>
+                <Button><Img src="./pics/basex.png"/><Font>BaseX</Font></Button>
+                <Button><Img src="./pics/bash.png"/><Font>Bash</Font></Button>
             </Buttons>
         </Container>
 
