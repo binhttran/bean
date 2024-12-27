@@ -73,7 +73,6 @@ const Img = styled.img`
 function Skills(){
     return (
         <Container id = 'skills'>
-            <CustomCursor />
             <Container1>
                 <Title>SKILLS</Title>
             </Container1>

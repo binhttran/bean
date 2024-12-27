@@ -58,6 +58,7 @@ const StyledLink = styled.a`
     font-weight: bold;
     position: relative; 
     display: inline-block;
+    padding-bottom: 5px;
 
     &::after {
         content: '';
@@ -186,7 +187,7 @@ const TypingContainer = ({text}) => {
 
 function Name(){
     return(
-        <Page>
+        <Page id="top">
             <TopBar>
                 <MyName>
                     BINH TRAN

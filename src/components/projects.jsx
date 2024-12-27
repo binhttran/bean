@@ -139,7 +139,6 @@ const GitImg = styled.img`
 function Projects() {
   return (
     <Wrapper id='projects'>
-        <CustomCursor />
         <Title >PROJECTS</Title>
         <Box1>
             <MiniBox>
