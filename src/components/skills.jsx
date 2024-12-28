@@ -22,6 +22,14 @@ const Title = styled.h2`
     color: #101827;
     font-weight: bold;
     font-size: 80px;
+    font-family: 'Poppins', sans-serif;
+
+    @media (max-width: 750px) {
+        font-size: 60px;
+        margin-top: 10px;
+     
+    }
+
 
 `;
 
@@ -39,6 +47,9 @@ const Button = styled.div`
     height: fit-content;
     width: fit-content;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+   
+
  
 
 `;
@@ -47,6 +58,13 @@ const Font = styled.h3`
     font-size: 20px;
     font-weight: bold;
     color: #101827;
+    font-family: 'Poppins', sans-serif;
+
+    @media (max-width: 750px) {
+        font-size: 15px;
+     
+    }
+
 `;
 const Buttons = styled.div`
     display: flex;
@@ -54,6 +72,10 @@ const Buttons = styled.div`
     margin-bottom: 90%;
     flex-wrap: wrap;
     margin-left: 10%;
+
+    @media (max-width: 750px) {
+        width: 100vw;
+        padding-right: 10px;
 `;
 
 const Container1 = styled.div`
@@ -67,6 +89,9 @@ const Img = styled.img`
     height: auto;
     margin: auto;
     padding: 0 10px 0 0; 
+
+    @media (max-width: 750px) {
+        width: 20%;
 `; 
 
 

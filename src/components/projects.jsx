@@ -7,6 +7,15 @@ const Title = styled.h2`
     font-size: 80px;
     margin-top: -55%;
     position: absolute;
+    font-family: 'Poppins', sans-serif;
+
+    @media (max-width: 750px) {
+        font-size: 60px;
+        margin-bottom: 550px;
+        position: absolute;
+     
+    }
+
 `;
 
 const Wrapper = styled.div`
@@ -43,6 +52,11 @@ const MiniBox = styled.div`
     height: auto;
     overflow: hidden;
 
+    @media (max-width: 750px) {
+        width: 30%;
+        height: 85%;
+        margin-top: 20%;
+
 `;
 
 const SubTitle = styled.h3`
@@ -50,6 +64,11 @@ const SubTitle = styled.h3`
     text-align: left; 
     margin-left: 20px;
     font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+
+    @media (max-width: 750px) {
+        font-size: 25px;
+
 `;
 
 
@@ -57,6 +76,9 @@ const Description = styled.p`
     color: #a1a1aa;
     text-align: left;
     margin-left: 20px;
+
+    @media (max-width: 750px) {
+        font-size: 10px;
 `;
 const Img = styled.img`
     width: 100%;
@@ -66,15 +88,17 @@ const Img = styled.img`
     object-fit: cover;
     backgroud-position: center;
     transition: 1s; 
+    postion: absolute;
 
 
     //slowly zoom in so it will be cropped when hover
     &:hover{
         transform: scale(1.05);
-
-        
-        
     }
+
+    @media (max-width: 750px) {
+        width: 100%;
+        height: auto;
 `;
 
 const Button = styled.button`
@@ -103,6 +127,11 @@ const Button = styled.button`
     outline: none;
     box-shadow: 0 0 4px #ffffff;
     }
+
+    @media (max-width: 750px) {
+        width: 45%;
+    
+    }
 `;
 
 const StyledLink = styled.a`
@@ -112,12 +141,18 @@ const StyledLink = styled.a`
     position: relative;
     display: inline-block;
 
+    @media (max-width: 750px) {
+        font-size: 10px;
+       
+    }
+
 `;
 
 const TechStack = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  
     
 `;
 const Button2 = styled(Button)`
@@ -129,6 +164,10 @@ const Button2 = styled(Button)`
     font-size: 12px;
     padding: 4px 4px; 
     margin-top: 1px;
+
+    @media (max-width: 750px) {
+        font-size: 8px;
+    }
 `;
 
 const GitImg = styled.img`
@@ -136,11 +175,50 @@ const GitImg = styled.img`
     height: auto; 
     margin-right: 4px;
 `;
+
+const Img2 = styled(Img)`   
+    height: 140%;
+    width: auto;
+    @media (max-width: 750px) {
+        width: 120%;
+        height: auto;
+    }
+`;
+const Img3 = styled(Img)`
+    height: auto%;
+    width: 70%;
+    margin: auto;
+
+    @media (max-width: 750px) {
+        width: 80%;
+        height: auto;
+    }
+
+   
+`;
 function Projects() {
   return (
     <Wrapper id='projects'>
         <Title >PROJECTS</Title>
         <Box1>
+        <MiniBox>
+                <Img3 src="pics/project3.png"/>
+                <SubTitle>Children's data </SubTitle>
+
+                <Button><GitImg src="pics/github.png"/><StyledLink href="https://github.com/ASL-LEX/sign-as-a-service" target="_blank"> Git Repo</StyledLink></Button>
+                <Description>
+                    tbd
+                </Description>
+                <TechStack>
+                    <Button2>Typescript</Button2>
+                    <Button2>Javascript</Button2>
+                    <Button2>Python</Button2>
+                    <Button2>NestJS</Button2>
+                    <Button2>HTML/CSS</Button2>
+                    <Button2>ReactJS</Button2>
+                    <Button2>MongoDB</Button2>
+                </TechStack>
+            </MiniBox>
             <MiniBox>
                 <Img src="pics/project1.png"/>
                 <SubTitle>Sign Language Lexicon</SubTitle>
@@ -160,6 +238,24 @@ function Projects() {
                     <Button2>HTML/CSS</Button2>
                     <Button2>ReactJS</Button2>
                     <Button2>MongoDB</Button2>
+                </TechStack>
+            </MiniBox>
+            <MiniBox>
+                <Img2 src="pics/project2.png"/>
+                <SubTitle>Recipes Automation</SubTitle>
+
+                <Button><GitImg src="pics/github.png"/><StyledLink href="https://github.com/binhttran/RecipesAutomation" target="_blank"> Git Repo</StyledLink></Button>
+                <Description>
+                 Meal preparation just got a lot easier. This platform provides a recipe based on available ingredients to save users convenience and time by 40%. Utilizes Google OAuth login to keep track of profiles with Firebase database while retrieving information from Spoonacular and Unwrangle
+                Sam's Club APIs to continuously give recipe recommendations and updates the cart to show the ingredients the user is missing which users can purchase directly from Sam's Club. It also keeps a history of your past recipes for your convenience.
+                </Description>
+                <TechStack>
+                    <Button2>Javascript</Button2>
+                    <Button2>ReactJS</Button2>
+                    <Button2>NodeJS</Button2>
+                    <Button2>ExpressJS</Button2>
+                    <Button2>Firebase</Button2>
+                    <Button2>APIs</Button2>
                 </TechStack>
             </MiniBox>
 

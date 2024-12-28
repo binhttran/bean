@@ -16,6 +16,12 @@ const Image = styled.img`
     filter: brightness(0.8) contrast(1.0);
     position: absolute;
 
+    @media (max-width: 750px) {
+        width: 70%;
+        margin-left: 45%;
+        margin-top: -10px;
+    }
+
 `;
 
 
@@ -29,6 +35,12 @@ const Bunny = styled.img`
     transform: rotate(-10deg);
     left: 10%;
     top: -10%;
+
+    @media (max-width: 750px) {
+        width: 25%;
+        margin-left: 45%;
+        margin-top: -40px;
+    }
 
 
     `;
@@ -54,6 +66,13 @@ const Title = styled.h1`
     color: #ebebe8;
     font-weight: bold;
     font-size: 80px;
+    font-family: 'Poppins', sans-serif;
+
+    @media (max-width: 750px) {
+        font-size: 60px;
+     
+    }
+
 `;
 
 const Pics = styled.div`
@@ -68,7 +87,17 @@ const Sparkle = styled.img`
     position: absolute;
     left: 15%;
     top: 15%;
-    z-index: 2;`;
+    z-index: 2;
+
+    @media (max-width: 750px) {
+        width: 10%;
+        margin-left: 45%;
+        margin-top: 19px;
+        z-index: 2;
+    }
+`;
+
+
 
 
 const Cloud   = styled.img`
@@ -79,6 +108,10 @@ const Cloud   = styled.img`
     top: 450%;
     transform: rotate(-10deg);
 
+    @media (max-width: 750px) {
+        visibility: hidden;
+    }
+
 `;
 
 const Introduction = styled.div`
@@ -86,16 +119,31 @@ const Introduction = styled.div`
     width: 36%;
     text-align: center;
     flex-direction: column;
-    margin-top: 40px;
+    margin-top: 25px;
     text-align: left;
     color: #325266;
     font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+
+    @media (max-width: 750px) {
+        width: 84%;
+        margin-left: 8%;
+        text-align: center;
+        margin-top: 320px;
+        font-size: 15px;
+    } 
+
 `;
 
 const Main = styled.div`
     display: flex;
     flex-direction: row;
     height: 70%;
+
+    @media (max-width: 750px) {
+        flex-direction: column;
+        height: 100%;
+    }
 
 `;
 

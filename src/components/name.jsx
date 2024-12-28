@@ -14,6 +14,10 @@ const Page = styled.div`
     padding: 2rem;
     flex-direction: column;
     background-color: #ebebe8;
+
+    @media (max-width: 750px) {
+        padding: 1rem;
+    }
 `;
 
 const Text = styled.h1`
@@ -21,12 +25,26 @@ const Text = styled.h1`
     font-size: 50px;
     text-align: center;
     margin-top: 50%;
+    font-family: 'Poppins', sans-serif;
+
+    @media (max-width: 750px) {
+        font-size: 50px;
+    }
+
 `;
 
 const TopBar = styled.div`
     display: flex;
     flex-direction: row;
     height: 20%;
+
+    @media (max-width: 750px) {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-bottom: auto;
+
+    }
 `;
 
 const Nav = styled.h3`
@@ -35,6 +53,14 @@ const Nav = styled.h3`
     text-align: left;
     padding-left: 20px;
     font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+
+    @media (max-width: 750px) {
+        padding-left: 0;
+        font-size: 25px;
+        padding: 10px;
+    }
+
    
 `;
 
@@ -43,13 +69,28 @@ const MyName = styled.h2`
     text-align: right;
     font-size: 30px;
     margin-top: 10px
+    font-family: 'Poppins', sans-serif;
+
+    @media (max-width: 750px) {
+        text-align: center;
+        font-size: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
 
 `;
 
 const NavBar= styled.div`
     display: flex;
     flex-direction: row;
-    padding-left: 700px;   
+    padding-left: 700px; 
+      
+    @media (max-width: 750px) {
+        flex-direction: row;
+        padding-left: 0;
+        align-items: center;
+    }
 `;
 
 const StyledLink = styled.a`
@@ -100,6 +141,7 @@ const TypedDiv = styled.div`
         }
     }
 }
+
     
 `; 
 
@@ -107,6 +149,12 @@ const BottomPart = styled.div`
     display: flex;
     flex-direction: column; 
     height: 80%;
+
+    @media (max-width: 750px) {
+        height: auto;
+        margin: auto;
+        margin-top: -250px;
+    }
 `; 
 
 const Position = styled.h2`
@@ -114,6 +162,13 @@ const Position = styled.h2`
     font-size: 30px;
     opacity: 0.6;
     margin-top: 0px; 
+    font-family: 'Poppins', sans-serif;
+
+    @media (max-width: 750px) {
+        font-size: 30px;
+        margin-top: -10px;
+    }
+
 `;
 const Cursor2 = styled.span`
     border-right: 2px solid grey;

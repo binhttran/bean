@@ -23,32 +23,57 @@ const Title = styled.h1`
     font-weight: bold;
     font-size: 100px;
     marhin-top: -10%;
-    font-family: leauge spartan;
+    font-family: 'Poppins', sans-serif;
+
+    @media (max-width: 750px) {
+        font-size: 80px;
+        margin: auto;
+     
+    }
 `;
 
 const Wrapper = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin-top: -5%;
+    margin-top: -3%;
+    margin-left: 10%;
+    width: 80vw;
+
+    @media (max-width: 750px) {
+        width: 100vw;
 `;
 
 const Subtitle = styled.div`
     display: flex;
     flex-direction: column;
+    padding-left: -20%;
+    width: 30%;
+
+    @media (max-width: 750px) {
+        padding-left: 0;
+        margin-top: -1%;
+        font-size: 12px;
+    }
+
     
 `;
 
 const Heading = styled.h3`
     color: #ebebe8;
     font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+
+    @media (max-width: 750px) {
+        font-size: 28px;
+        margin-top: -80%;
+
 
 `;
 
 const Detail = styled.h3`
     color: white;
     margin-top: 1%;
-    font-family: 'leauge spartan';
+    font-family: 'Poppins', sans-serif;
     
 
 `;
@@ -79,6 +104,8 @@ const StyledLink = styled.a`
         transform: scaleX(1); 
         transform-origin: bottom left;
     }
+
+    
 `;
 
 
@@ -91,6 +118,10 @@ const ClockContainer = styled.div`
   text-align: center;
 
   color: #fff;
+
+  @media (max-width: 750px) {
+        font-size: 16px;
+    }
 
 `;
 
@@ -142,8 +173,14 @@ const Footer = styled.div`
 const FooterText = styled.h3`
     color: #ebebe8;
     font-size: 20px; 
-    font-family: 'leauge spartan';
     margin-left: 20%;
+    font-family: 'Poppins', sans-serif;
+
+    @media (max-width: 750px) {
+        font-size: 15px;
+        margin-left: 10%;
+    }
+
 
 `;
 
@@ -154,13 +191,22 @@ const FooterLink = styled.a`
     font-size: 20px;
     padding-left: 50%;
     padding-top: 20px;
+    font-family: 'Poppins', sans-serif;
+
+    @media (max-width: 750px) {
+        font-size: 15px;
+    }
+
 `;
 
 const Img = styled.img`
     width: 5%;
     height: auto;
 
-    `; 
+    @media (max-width: 750px) {
+        width: 8%;
+
+`; 
 function Contacts () {
 
     return (
