@@ -15,7 +15,7 @@ const Page = styled.div`
     flex-direction: column;
     background-color: #ebebe8;
 
-    @media (max-width: 750px) {
+    @media (max-width: 1000px) {
         padding: 1rem;
     }
 `;
@@ -27,7 +27,7 @@ const Text = styled.h1`
     margin-top: 50%;
     font-family: 'Poppins', sans-serif;
 
-    @media (max-width: 750px) {
+    @media (max-width: 1000px) {
         font-size: 50px;
     }
 
@@ -38,7 +38,7 @@ const TopBar = styled.div`
     flex-direction: row;
     height: 20%;
 
-    @media (max-width: 750px) {
+    @media (max-width: 1000px) {
         flex-direction: column;
         align-items: center;
         height: auto;
@@ -55,7 +55,7 @@ const Nav = styled.h3`
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
 
-    @media (max-width: 750px) {
+    @media (max-width: 1000px) {
         padding-left: 0;
         font-size: 25px;
         padding: 10px;
@@ -71,7 +71,7 @@ const MyName = styled.h2`
     margin-top: 10px
     font-family: 'Poppins', sans-serif;
 
-    @media (max-width: 750px) {
+    @media (max-width: 1000px) {
         text-align: center;
         font-size: 30px;
         margin-top: 10px;
@@ -86,7 +86,7 @@ const NavBar= styled.div`
     flex-direction: row;
     padding-left: 700px; 
       
-    @media (max-width: 750px) {
+    @media (max-width: 1000px) {
         flex-direction: row;
         padding-left: 0;
         align-items: center;
@@ -150,7 +150,7 @@ const BottomPart = styled.div`
     flex-direction: column; 
     height: 80%;
 
-    @media (max-width: 750px) {
+    @media (max-width: 1000px) {
         height: auto;
         margin: auto;
         margin-top: -250px;
@@ -164,7 +164,7 @@ const Position = styled.h2`
     margin-top: 0px; 
     font-family: 'Poppins', sans-serif;
 
-    @media (max-width: 750px) {
+    @media (max-width: 1000px) {
         font-size: 30px;
         margin-top: -10px;
     }

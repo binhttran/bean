@@ -9,7 +9,7 @@ const Title = styled.h2`
     position: absolute;
     font-family: 'Poppins', sans-serif;
 
-    @media (max-width: 750px) {
+    @media (max-width: 1000px) {
         font-size: 60px;
         margin-bottom: 550px;
         position: absolute;
@@ -52,7 +52,7 @@ const MiniBox = styled.div`
     height: auto;
     overflow: hidden;
 
-    @media (max-width: 750px) {
+    @media (max-width: 1000px) {
         width: 30%;
         height: 85%;
         margin-top: 20%;
@@ -66,7 +66,7 @@ const SubTitle = styled.h3`
     font-size: 30px;
     font-family: 'Poppins', sans-serif;
 
-    @media (max-width: 750px) {
+    @media (max-width: 1000px) {
         font-size: 25px;
 
 `;
@@ -77,7 +77,7 @@ const Description = styled.p`
     text-align: left;
     margin-left: 20px;
 
-    @media (max-width: 750px) {
+    @media (max-width: 1000px) {
         font-size: 10px;
 `;
 const Img = styled.img`
@@ -96,7 +96,7 @@ const Img = styled.img`
         transform: scale(1.05);
     }
 
-    @media (max-width: 750px) {
+    @media (max-width: 1000px) {
         width: 100%;
         height: auto;
 `;
@@ -128,7 +128,7 @@ const Button = styled.button`
     box-shadow: 0 0 4px #ffffff;
     }
 
-    @media (max-width: 750px) {
+    @media (max-width: 1000px) {
         width: 45%;
     
     }
@@ -141,7 +141,7 @@ const StyledLink = styled.a`
     position: relative;
     display: inline-block;
 
-    @media (max-width: 750px) {
+    @media (max-width: 1000px) {
         font-size: 10px;
        
     }
@@ -165,7 +165,7 @@ const Button2 = styled(Button)`
     padding: 4px 4px; 
     margin-top: 1px;
 
-    @media (max-width: 750px) {
+    @media (max-width: 1000px) {
         font-size: 8px;
     }
 `;
@@ -179,7 +179,7 @@ const GitImg = styled.img`
 const Img2 = styled(Img)`   
     height: 140%;
     width: auto;
-    @media (max-width: 750px) {
+    @media (max-width: 1000px) {
         width: 120%;
         height: auto;
     }
@@ -189,7 +189,7 @@ const Img3 = styled(Img)`
     width: 70%;
     margin: auto;
 
-    @media (max-width: 750px) {
+    @media (max-width: 1000px) {
         width: 80%;
         height: auto;
     }

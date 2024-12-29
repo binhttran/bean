@@ -25,7 +25,7 @@ const Title = styled.h1`
     marhin-top: -10%;
     font-family: 'Poppins', sans-serif;
 
-    @media (max-width: 750px) {
+    @media (max-width: 1000px) {
         font-size: 80px;
         margin: auto;
      
@@ -39,7 +39,7 @@ const Wrapper = styled.div`
     margin-left: 10%;
     width: 80vw;
 
-    @media (max-width: 750px) {
+    @media (max-width: 1000px) {
         width: 100vw;
 `;
 
@@ -49,7 +49,7 @@ const Subtitle = styled.div`
     padding-left: -20%;
     width: 30%;
 
-    @media (max-width: 750px) {
+    @media (max-width: 1000px) {
         padding-left: 0;
         margin-top: -1%;
         font-size: 12px;
@@ -63,7 +63,7 @@ const Heading = styled.h3`
     font-size: 40px;
     font-family: 'Poppins', sans-serif;
 
-    @media (max-width: 750px) {
+    @media (max-width: 1000px) {
         font-size: 28px;
         margin-top: -80%;
 
@@ -119,7 +119,7 @@ const ClockContainer = styled.div`
 
   color: #fff;
 
-  @media (max-width: 750px) {
+  @media (max-width: 1000px) {
         font-size: 16px;
     }
 
@@ -176,7 +176,7 @@ const FooterText = styled.h3`
     margin-left: 20%;
     font-family: 'Poppins', sans-serif;
 
-    @media (max-width: 750px) {
+    @media (max-width: 1000px) {
         font-size: 15px;
         margin-left: 10%;
     }
@@ -193,7 +193,7 @@ const FooterLink = styled.a`
     padding-top: 20px;
     font-family: 'Poppins', sans-serif;
 
-    @media (max-width: 750px) {
+    @media (max-width: 1000px) {
         font-size: 15px;
     }
 
@@ -203,7 +203,7 @@ const Img = styled.img`
     width: 5%;
     height: auto;
 
-    @media (max-width: 750px) {
+    @media (max-width: 1000px) {
         width: 8%;
 
 `; 

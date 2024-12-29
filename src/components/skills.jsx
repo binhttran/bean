@@ -24,7 +24,7 @@ const Title = styled.h2`
     font-size: 80px;
     font-family: 'Poppins', sans-serif;
 
-    @media (max-width: 750px) {
+    @media (max-width: 1000px) {
         font-size: 60px;
         margin-top: 10px;
      
@@ -60,7 +60,7 @@ const Font = styled.h3`
     color: #101827;
     font-family: 'Poppins', sans-serif;
 
-    @media (max-width: 750px) {
+    @media (max-width: 1000px) {
         font-size: 15px;
      
     }
@@ -73,7 +73,7 @@ const Buttons = styled.div`
     flex-wrap: wrap;
     margin-left: 10%;
 
-    @media (max-width: 750px) {
+    @media (max-width: 1000px) {
         width: 100vw;
         padding-right: 10px;
 `;
@@ -90,7 +90,7 @@ const Img = styled.img`
     margin: auto;
     padding: 0 10px 0 0; 
 
-    @media (max-width: 750px) {
+    @media (max-width: 1000px) {
         width: 20%;
 `; 
 

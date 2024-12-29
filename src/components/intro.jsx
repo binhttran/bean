@@ -16,7 +16,7 @@ const Image = styled.img`
     filter: brightness(0.8) contrast(1.0);
     position: absolute;
 
-    @media (max-width: 750px) {
+    @media (max-width: 1000px) {
         width: 70%;
         margin-left: 45%;
         margin-top: -10px;
@@ -36,7 +36,7 @@ const Bunny = styled.img`
     left: 10%;
     top: -10%;
 
-    @media (max-width: 750px) {
+    @media (max-width: 1000px) {
         width: 25%;
         margin-left: 45%;
         margin-top: -40px;
@@ -68,7 +68,7 @@ const Title = styled.h1`
     font-size: 80px;
     font-family: 'Poppins', sans-serif;
 
-    @media (max-width: 750px) {
+    @media (max-width: 1000px) {
         font-size: 60px;
      
     }
@@ -89,7 +89,7 @@ const Sparkle = styled.img`
     top: 15%;
     z-index: 2;
 
-    @media (max-width: 750px) {
+    @media (max-width: 1000px) {
         width: 10%;
         margin-left: 45%;
         margin-top: 19px;
@@ -108,7 +108,7 @@ const Cloud   = styled.img`
     top: 450%;
     transform: rotate(-10deg);
 
-    @media (max-width: 750px) {
+    @media (max-width: 1000px) {
         visibility: hidden;
     }
 
@@ -125,7 +125,7 @@ const Introduction = styled.div`
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
 
-    @media (max-width: 750px) {
+    @media (max-width: 1000px) {
         width: 84%;
         margin-left: 8%;
         text-align: center;
@@ -140,7 +140,7 @@ const Main = styled.div`
     flex-direction: row;
     height: 70%;
 
-    @media (max-width: 750px) {
+    @media (max-width: 1000px) {
         flex-direction: column;
         height: 100%;
     }
