@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import Name from './components/name.jsx';
 import style from 'styled-components';
 import Projects from './components/projects';

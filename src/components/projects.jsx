@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import CustomCursor from './cursor';
+import React from 'react';
+
 
 const Title = styled.h2`
     color: #b8d2e3;

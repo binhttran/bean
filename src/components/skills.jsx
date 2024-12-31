@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import CustomCursor from "./cursor";
+import React from 'react';
+
 
 const Container = styled.div`
     flex-direction: column;
