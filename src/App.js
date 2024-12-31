@@ -9,7 +9,6 @@ import Skills from "./components/skills"
 import CustomCursor from './components/cursor';
 import Contacts from './components/contacts';
 
-//comment to deploy
 const Heading = style.div`
     display: flex;
     background-color:#B8D2E3;
@@ -46,6 +45,7 @@ const Container = style.div`
 `;
 
 
+console.log(process.env.NODE_OPTIONS);
 
 function App() {
   return (
